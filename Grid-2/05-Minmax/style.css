@@ -8,3 +8,34 @@ body {
 
 /* ---------------------------------------------------- */
 
+.img {
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+	padding: 5px;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 2px 5px 6px #00000020;
+}
+
+figcaption {
+	padding: 5px 0;
+	text-align: center;
+}
+
+.galerie {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+}
+
+figure:nth-child(7n+1) {transform: rotate(3deg);}
+figure:nth-child(7n+2) {transform: rotate(-1deg);}
+figure:nth-child(7n+3) {transform: rotate(2deg);}
+figure:nth-child(7n+4) {transform: rotate(-3deg);}
+figure:nth-child(7n+5) {transform: rotate(4deg);}
+figure:nth-child(7n+6) {transform: rotate(-2deg);}
+figure:nth-child(7n+7) {transform: rotate(1deg);}
+

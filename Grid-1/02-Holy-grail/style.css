@@ -4,6 +4,7 @@ html { box-sizing: border-box; }
 
 body {
 	font-family: sans-serif;
+	margin: 0px;
 }
 
 .sloupec {
@@ -12,9 +13,40 @@ body {
 
 .hlavicka	{ background-color: #2ecc71; }
 .hlavni		{ background-color: #f1c40f; }
-.levy			{ background-color: #3498db; }
+.levy		{ background-color: #3498db; }
 .pravy		{ background-color: #e74c3c; }
 .paticka	{ background-color: #9b59b6; }
 
 /* ---------------------------------------------------- */
 
+.kontejner {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 200px 1fr 250px;
+	grid-template-rows: 200px 1fr 100px;
+}
+
+.hlavicka {
+	grid-column: 1 / -1;
+	grid-row: 1;
+}
+
+.hlavni {
+	grid-column: 2;
+	grid-row: 2;
+}
+
+.levy {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.pravy {
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.paticka {
+	grid-column: 1 / -1;
+	grid-row: 3;
+}
